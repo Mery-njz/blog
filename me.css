@@ -1,0 +1,66 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url('fundochi.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container principal */
+.credits-container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.85); /* branco translúcido */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  overflow: hidden;
+  max-width: 900px;
+  width: 90%;
+}
+
+/* Foto lateral */
+.credits-photo {
+  background: rgba(255, 182, 193, 0.6); /* rosa translúcido */
+  padding: 20px;
+  min-width: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.credits-photo img {
+  max-width: 150px;
+  border-radius: 8px;
+  opacity: 0.95;
+}
+
+/* Caixa de créditos */
+.credits-box {
+  flex: 1;
+  padding: 30px;
+}
+
+.credits-box h1 {
+  font-family: 'Dancing Script', cursive;
+  color: #2e8b57; /* verde */
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.credits-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.credits-box li {
+  margin: 10px 0;
+}
+
+.credits-box a {
+  text-decoration: none;
+  color: #2e8b57; /* verde */
+  font-size: 18px;
+  font-family: 'Dancing Script', cursive;
+}
