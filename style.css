@@ -10,7 +10,7 @@ body {
 }
 
 .container {
-  background: rgba(255, 255, 255, 0.8); /* branco translúcido */
+  background: rgba(255, 255, 255, 0.8); 
   padding: 30px;
   border-radius: 12px;
   text-align: center;
@@ -18,11 +18,12 @@ body {
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
 }
 
-/* Imagem dentro do container */
+
 .conteudo-img {
-  max-width: 100%;   /* nunca ultrapassa o container */
-  height: auto;      /* mantém proporção */
-  opacity: 0.95;     /* 95% de opacidade */
+  max-width: 100%;   
+  max-width: 400px;  
+  height: auto;      
+  opacity: 0.95;     
   border-radius: 8px;
   margin-top: 15px;
 }
