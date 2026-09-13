@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Dancing Script', cursive, Georgia, serif;
-  background: url('fundoirio.jpg') no-repeat center center fixed;
+  background: url('fundoirio.png') no-repeat center center fixed;
   background-size: cover;
   color: #333;
   display: flex;
