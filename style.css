@@ -4,37 +4,34 @@ body {
   background: url('fundochi.jpg') no-repeat center center fixed;
   background-size: cover;
 
-  /* Agora o body é grid */
-  display: grid;
-  grid-template-columns: 200px 1fr;
-  grid-template-rows: 80px 1fr;
-  grid-template-areas:
-    "topbar topbar"
-    "sidebar content";
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100vh;
 }
 
-/* Barra superior */
-.topbar {
-  grid-area: topbar;
-  background: linear-gradient(90deg, #ffb6c1, #90ee90); /* rosa e verde */
-  color: #fff;
-  text-align: center;
-  padding: 20px;
-  font-size: 24px;
-  font-weight: bold;
+/* Container central */
+.container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.8); /* branco translúcido */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  overflow: hidden;
+  max-width: 800px;
+  width: 90%;
 }
 
 /* Menu lateral */
 .sidebar {
-  grid-area: sidebar;
-  background: #ffeef5; /* rosa clarinho */
+  background: rgba(255, 182, 193, 0.6); /* rosa translúcido */
   padding: 20px;
+  min-width: 180px;
 }
 
 .sidebar ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .sidebar li {
@@ -47,28 +44,18 @@ body {
   font-weight: bold;
 }
 
-/* Conteúdo principal */
+/* Conteúdo */
 .content {
-  grid-area: content;
+  flex: 1;
   padding: 30px;
-  display: flex;
-  gap: 20px;
-  align-items: flex-start;
+  text-align: center;
 }
 
-/* Imagem de perfil */
-.profile-img {
+/* Imagem pequena dentro do container */
+.conteudo-img {
   max-width: 200px;
-  border-radius: 12px;
+  height: auto;
   opacity: 0.95;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
-}
-
-/* Caixa de texto */
-.text-box {
-  background: rgba(255, 182, 193, 0.2); /* rosa translúcido */
-  border: 2px solid #90ee90; /* borda verde */
-  border-radius: 12px;
-  padding: 20px;
-  max-width: 500px;
+  border-radius: 8px;
+  margin-top: 15px;
 }
