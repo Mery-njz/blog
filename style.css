@@ -10,10 +10,10 @@ body {
   height: 100vh;
 }
 
-/* Container central */
+
 .container {
   display: flex;
-  background: rgba(255, 255, 255, 0.8); /* branco translúcido */
+  background: rgba(255, 255, 255, 0.8); 
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   overflow: hidden;
@@ -21,9 +21,9 @@ body {
   width: 90%;
 }
 
-/* Menu lateral */
+
 .sidebar {
-  background: rgba(255, 182, 193, 0.6); /* rosa translúcido */
+  background: rgba(255, 182, 193, 0.6); 
   padding: 20px;
   min-width: 180px;
 }
@@ -35,23 +35,25 @@ body {
 }
 
 .sidebar li {
-  margin: 15px 0;
+  margin: 20px 0;
 }
 
 .sidebar a {
   text-decoration: none;
-  color: #2e8b57; /* verde */
+  color: #2e8b57; 
   font-weight: bold;
+  font-size: 20px; 
+  font-family: 'Dancing Script', cursive; 
 }
 
-/* Conteúdo */
+
 .content {
   flex: 1;
   padding: 30px;
   text-align: center;
 }
 
-/* Imagem pequena dentro do container */
+
 .conteudo-img {
   max-width: 200px;
   height: auto;
