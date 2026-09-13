@@ -1,32 +1,19 @@
 body {
   margin: 0;
-  height: 100vh;
+  font-family: Arial, sans-serif;
   background: url('fundochi.jpg') no-repeat center center fixed;
   background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: Arial, sans-serif;
+
+  /* Agora o body é grid */
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-template-rows: 80px 1fr;
+  grid-template-areas:
+    "topbar topbar"
+    "sidebar content";
+  height: 100vh;
 }
 
-.container {
-  background: rgba(255, 255, 255, 0.8); 
-  padding: 30px;
-  border-radius: 12px;
-  text-align: center;
-  max-width: 600px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
-}
-
-
-.conteudo-img {
-  max-width: 100%;   
-  max-width: 200px;  
-  height: auto;      
-  opacity: 0.95;     
-  border-radius: 8px;
-  margin-top: 15px;
-}
 /* Barra superior */
 .topbar {
   grid-area: topbar;
