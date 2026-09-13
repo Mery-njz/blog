@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: 'Dancing Script', cursive, Georgia, serif;
-  background: url('fundochi.jpg') no-repeat center center fixed;
+  background: url('fundoirio.jpg') no-repeat center center fixed;
   background-size: cover;
   color: #333;
   display: flex;
@@ -48,7 +48,7 @@ body {
 .gallery a img:hover {
   transform: scale(1.05);
   filter: grayscale(0%);
-  box-shadow: 0 0 12px rgba(255, 128, 192, 0.6);
+  box-shadow: 0 0 12px rgba(255, 128, 192, 0.6); /* rosa */
 }
 
 /* Sidebar */
@@ -107,4 +107,23 @@ body {
 .menu-list a:hover {
   color: #006400; /* verde mais escuro */
   text-decoration: underline;
+}
+
+/* Botão voltar */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #ffc0eb; /* rosa claro */
+  color: #000;
+  text-decoration: none;
+  border-radius: 20px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #ff9fd6; /* rosa mais forte */
+  transform: scale(1.05);
 }
