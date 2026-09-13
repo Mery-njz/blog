@@ -27,3 +27,61 @@ body {
   border-radius: 8px;
   margin-top: 15px;
 }
+/* Barra superior */
+.topbar {
+  grid-area: topbar;
+  background: linear-gradient(90deg, #ffb6c1, #90ee90); /* rosa e verde */
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Menu lateral */
+.sidebar {
+  grid-area: sidebar;
+  background: #ffeef5; /* rosa clarinho */
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #2e8b57; /* verde */
+  font-weight: bold;
+}
+
+/* Conteúdo principal */
+.content {
+  grid-area: content;
+  padding: 30px;
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+/* Imagem de perfil */
+.profile-img {
+  max-width: 200px;
+  border-radius: 12px;
+  opacity: 0.95;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+
+/* Caixa de texto */
+.text-box {
+  background: rgba(255, 182, 193, 0.2); /* rosa translúcido */
+  border: 2px solid #90ee90; /* borda verde */
+  border-radius: 12px;
+  padding: 20px;
+  max-width: 500px;
+}
