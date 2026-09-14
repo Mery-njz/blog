@@ -1,0 +1,80 @@
+body {
+  margin: 0;
+  font-family: 'Dancing Script', cursive, Arial, sans-serif;
+  background: url('fundocas.jpg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container principal */
+.container {
+  display: flex;
+  background: rgba(255, 255, 255, 0.85); /* branco translúcido */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  overflow: hidden;
+  max-width: 1000px;
+  width: 90%;
+}
+
+/* Menu lateral */
+.sidebar {
+  background: rgba(255, 182, 193, 0.6); /* rosa translúcido */
+  padding: 20px;
+  min-width: 180px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin: 25px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #2e8b57; /* verde */
+  font-size: 24px; /* maior */
+  font-family: 'Dancing Script', cursive;
+  font-weight: bold;
+}
+
+.sidebar a:hover {
+  color: #006400; /* verde mais escuro */
+  text-decoration: underline;
+}
+
+/* Conteúdo */
+.content {
+  flex: 1;
+  padding: 30px;
+  text-align: center;
+}
+
+/* Galeria */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  filter: grayscale(100%);
+  transition: transform 0.3s ease, filter 0.5s ease;
+  cursor: pointer;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+  filter: grayscale(0%);
+  box-shadow: 0 0 12px rgba(255, 128, 192, 0.6);
+}
